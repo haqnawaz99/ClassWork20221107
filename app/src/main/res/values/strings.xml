@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">20221031</string>
+    <string name="textviewHelo">salaam</string>
+    <string name="textCs">Wellcome from Cs</string>
+    <string name="textIT">Welcome from IT</string>
+
 </resources>

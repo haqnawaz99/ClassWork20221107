@@ -2,6 +2,7 @@ package haqnawaz.org.a20221031;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,9 +16,11 @@ public class MainActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Intent main=getIntent();
+        String textValue=main.getStringExtra("myText");
         btnAdd =findViewById(R.id.buttonIncrement);
         textView = findViewById(R.id.textCount);
+        textView.setText(textValue);
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
